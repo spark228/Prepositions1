@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Prepositions Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="progress">Прогресс: <span id="progress-num">1</span> / <span id="progress-total">38</span></div>
+    <img id="slide-image" src="" alt="Slide">
+    <div id="buttons-container"></div>
+    <div id="navigation">
+      <button id="next-btn" disabled>Следующий</button>
+      <button id="finish-btn" style="display:none">Закончить тест</button>
+    </div>
+  </div>
+
+  <div id="result-modal">
+    <div id="result-content">
+      <h2>Результаты</h2>
+      <div id="score"></div>
+      <table id="result-table"></table>
+      <button id="close-btn">Пройти заново</button>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
